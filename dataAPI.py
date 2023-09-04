@@ -4,7 +4,7 @@ from numpy import array
 import functions
 import os
 import pickle
-import config
+from config import *
 
 # wrapper for acquiring data
 def API(box, 
@@ -29,8 +29,6 @@ def API(box,
         year of data extraction, downloads chunks of data as one year packages
     glacierName: string
         Name of the glacier for folder structure
-    plot: boolean
-        plot alignment (done correctly?)
 
     return: list of tuple of datetime and 4d ndarray tensor for model building
     """
@@ -70,6 +68,7 @@ def getYearlyData(years,
     for b in range(len(years) - 1):
         os.chdir(path)
         if b < 10:
+            print("start processing year: " + years[b])
             string = years[b] + "-01-01/" + years[b+1] + "-01-01"
             API(boundingBox,
                 string,

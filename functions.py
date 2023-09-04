@@ -17,7 +17,7 @@ def getData(bbox, bands, timeRange, cloudCoverage, allowedMissings):
     timeRange: string
         e.g. "2020-12-01/2020-12-31"
     cloudCoverage: int
-        amount of clouds allowed in %
+        amount of clouds allowed in [0,100]
     allowedMissings: float
         amount of pixels nan
 
@@ -69,6 +69,7 @@ def getData(bbox, bands, timeRange, cloudCoverage, allowedMissings):
                               np.array(output[i, 6, :, :])
                               ])
                 cloudCov = cloud[1][i]
+                print(time[i])
                 data = (time[i], data, cloudCov)
                 dataList.append(data)
 
