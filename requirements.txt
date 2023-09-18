@@ -1,0 +1,4 @@
+numpy 
+planetary-computer
+pystac-client
+stackstac
