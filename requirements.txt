@@ -2,3 +2,5 @@ numpy
 planetary-computer
 pystac-client
 stackstac
+opencv-python
+torch

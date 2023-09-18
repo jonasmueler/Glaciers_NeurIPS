@@ -132,7 +132,7 @@ def API(box,
 
     # save on hard drive with pickling
     # create folder
-    pathOrigin = path + "/" + glacierName + "/" + "rawData"
+    pathOrigin = path + "/" + "datasets" + "/" + glacierName + "/" + "rawData"
     os.makedirs(pathOrigin, exist_ok = True)
     os.chdir(pathOrigin)
 
@@ -147,7 +147,7 @@ def getYearlyData(years,
                   boundingBox, 
                   clouds, 
                   allowedMissings, 
-                  glacierName):
+                  name):
     """
     years: list of string
         years that are to be extracted
@@ -157,8 +157,8 @@ def getYearlyData(years,
         int [0,100]
     allowedMissings: float
         [0,1], amount of missing pixels allowed
-    glacierName: str
-        Name of glacier and folder for files
+    Name: str
+        Name of folder
     """
     for b in range(len(years) - 1):
         os.chdir(path)
@@ -171,7 +171,7 @@ def getYearlyData(years,
                 clouds,
                 allowedMissings, 
                 years[b],
-                glacierName)
+                name)
             
             print(years[b] + " done")
     
@@ -180,7 +180,7 @@ def getYearlyData(years,
      
 
 if __name__ == "__main__":
-    getYearlyData(years, boundingBox, clouds, allowedMissings, glacierName)
+    getYearlyData(years, boundingBox, clouds, allowedMissings, name)
 
 
 
