@@ -4,3 +4,7 @@ pystac-client
 stackstac
 opencv-python
 torch
+matplotlib
+Jupyter
+ipyleaflet
+

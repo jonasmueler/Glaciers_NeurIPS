@@ -1,8 +1,52 @@
 import numpy as np
 import cv2
 import os
-import torch
+#import torch
 from config import *
+import pickle
+import glob
+import matplotlib.pyplot as plt
+
+def openData(name):
+    """
+    opens pickled data object
+    
+    name : string
+    	named of saved data object
+    	
+    returns : list of tuple of datetime and np array 
+
+    """
+    with open(name, "rb") as fp:   # Unpickling
+        data = pickle.load(fp)
+    return data
+
+def loadData(path, years, name):
+    """
+
+    path: string
+        path to data pickle objects
+    years: list of string
+        years to be loaded
+    returns: list of tuple of datetime and np.array
+        date and image in list of tuple
+    """
+
+    os.chdir(os.path.join(path, "datasets", name, "rawData"))
+    Path = os.getcwd()
+    os.chdir(Path)
+    print("Begin loading data")
+
+    # read
+    fullData = []
+    for i in range(len(years)):
+        helper = openData(years[i])
+        fullData.append(helper)
+    print("data loading finished")
+
+    d = [item for sublist in fullData for item in sublist]
+
+    return d
 
 def kernel(x, mask):
     """
@@ -77,12 +121,16 @@ def convertDatetoVector(date):
     return res
 
 
-def enhancedCorAlign(imgStack):
+def enhancedCorAlign(imgStack, bands = [1,2,3]):
     """
-    aligsn images to mean temporal image
+    aligns images to mean temporal image
 
     imgStack: np.array
         (N, C, X, Y)
+    bands: list
+        bands to be aligned; default is RGB bands 
+        For NDSI calculations use [2, 5, 5] (green and swir1 band), must be 
+        three otherwise function has to be applied recursively multiple times
     returns: list of np.array
         [(C, X, Y)...]
     """
@@ -95,7 +143,7 @@ def enhancedCorAlign(imgStack):
 
     # add 3rd channel dimension
     for i in range(len(imgStack)):
-        imageStack[i] = np.stack((imgStack[i, :, :, 0], imgStack[i, :, :, 1], imgStack[i, :, :, 1]), axis=2)
+        imageStack[i] = np.stack((imgStack[i, :, :, bands[0]], imgStack[i, :, :, bands[1]], imgStack[i, :, :, bands[2]]), axis=2)
 
     # Compute average temporal image
     imgStack = imageStack.astype('float32')
@@ -134,12 +182,14 @@ def enhancedCorAlign(imgStack):
         grayFrame = cv2.cvtColor(frame.astype('float32'), cv2.COLOR_BGR2GRAY).astype('float32')
         (cc, warpMatrix) = cv2.findTransformECC(grayAvgTemporalImage, grayFrame, warpMatrix, motionModel,
                                                 criteria, mask, 1)
+        
         #registeredFrame = cv2.warpAffine(frame, warpMatrix, (frame.shape[1], frame.shape[0]),
         #                                 flags=cv2.INTER_LINEAR + cv2.WARP_INVERSE_MAP)
         registeredFrame = cv2.warpPerspective(frame, warpMatrix, (frame.shape[1], frame.shape[0]),
                                          flags=cv2.INTER_LINEAR + cv2.WARP_INVERSE_MAP)
-        registeredFrame = np.transpose(registeredFrame, (2, 0, 1))[[0, 1], :, :]
+        registeredFrame = np.transpose(registeredFrame, (2, 0, 1))# [[0, 1], :, :] use if only two bands are needed for NDSI output
         registeredStack.append(registeredFrame)
+        
         counter += 1
 
         print("scene: ", counter, "done")
@@ -147,14 +197,14 @@ def enhancedCorAlign(imgStack):
     return registeredStack
 
 
-def monthlyAverageScenesEnCC(d, ROI, applyKernel, name):
+def alignment(d, ROI, applyKernel, name):
 
     """
     gets list of list with images from  different months alignes the images
 
     d: list of tuple of datetime and np.array
     ROI: list of int
-        region of interest to be processed
+        region of interest to be processed in pixels
     applyKernel: boolean
         apply kernel to average out missing values in images
     name: str
@@ -163,19 +213,18 @@ def monthlyAverageScenesEnCC(d, ROI, applyKernel, name):
         dates in np array and aligned images in np.array
     """
 
-    # get region of interest in data, relevant bands for NDSI index, clean missings
+    # get region of interest in data
     for i in range(len(d)):
-        img = d[i][1][[2,5], ROI[0]:ROI[1], ROI[2]:ROI[3]]
+        img = d[i][1][:, ROI[0]:ROI[1], ROI[2]:ROI[3]]
         # clean missings with kernel
         if applyKernel:
             # apply kernel to raw bands, do many times as sometimes division by zero gives nans in image
-            for z in [0, 1]:  # only use NDSI relevant bands
+            for z in range(img.shape[0]):  
                 while np.count_nonzero(np.isnan(img[z, :, :])) > 0:
                     img[z, :, :] = applyToImage(img[z, :, :])
                     print("still missing ", np.count_nonzero(np.isnan(img[z, :, :])), " pixels")
-                # img[z, :, :] = imageAlignArcosics(img[z, :, :], ref[z, :, :])
-                print("band: ", z, " of ", img.shape[0], "done")
-        print("application of kernel done")
+                print("band: ", z, " of ", img.shape[0] - 1, "done")
+        print(f"application of kernel on image {i} done")
         d[i] = (d[i][0] ,img)
 
     # align data with enhanced correlation method
@@ -189,17 +238,88 @@ def monthlyAverageScenesEnCC(d, ROI, applyKernel, name):
     print("image alignment done")
 
     # put back into d list
-    for i in range(len(d)):
-        d[i] = (d[i][0] , alignedData[i])
+    #for i in range(len(d)):
+    #    d[i] = (d[i][0] , alignedData[i])
     
     # save on hard drive 
     os.chdir(path)
-    os.makedirs(os.path.join(path, "datasets", name, "alignedData"))
-    os.makedirs(os.path.join(path, "datasets", name, "Dates"))
+    os.makedirs(os.path.join(path, "datasets", name, "alignedData"), exist_ok=True)
+    os.makedirs(os.path.join(path, "datasets", name, "dates"), exist_ok=True)
 
-    ## implement data save method here
+    # save data 
+    for i in range(len(d)):
+        # save images
+        os.chdir(os.path.join(path, "datasets", name, "alignedData"))
+        with open(str(i), "wb") as fp:
+            pickle.dump(alignedData[i], fp)
+
+        # save dates
+        os.chdir(os.path.join(path, "datasets", name, "dates"))
+        with open(str(i), "wb") as fp:
+            pickle.dump(d[i][0], fp)
 
     return d
+
+def minmaxScaler(X):
+    """
+    X: 2d array
+    returns: 2d array
+       values from [0,1]
+    """
+    #res = (X - np.nanpercentile(X,2)) / (np.nanpercentile(X, 98) - np.nanpercentile(X, 2))
+    res = ((X - np.nanmin(X) )/ (np.nanmax(X) - np.nanmin(X))) * 255
+    res = res.astype(np.uint8)
+    
+    return res
+
+def createImage(img, alpha):
+    """
+    img: 3d array
+        [red, green, blue]
+
+
+    returns: np.array
+        plot ready image
+    """
+    red = img[0, :,:]*alpha
+    green = img[1, :,:]*alpha
+    blue = img[2, :,:]*alpha
+
+    green = minmaxScaler(green)
+    blue = minmaxScaler(blue)
+    red = minmaxScaler(red)
+
+    plotData = np.dstack((red, green, blue))
+
+    return plotData
+
+def visualCheck(name):
+    """
+    plots the aligned and extracted images in RGB coordinates by using the scaled red, green and blue band values of the satellite.
+
+    name: str
+        name of the extracted data object from the satellite 
+    """
+
+    # load data
+    currentPath = os.path.join(path, "datasets", name, "alignedData")
+    os.chdir(currentPath)
+    files = glob.glob(os.path.join(currentPath, '*'))
+
+    # create folder 
+    os.makedirs(os.path.join(path, "datasets", name, "alignedRGB"),exist_ok=True)
+
+    # plot data sequentially and save
+    for i in range(len(files)):  # rgb
+        img = openData(files[i])
+        img = createImage(img[:, :, :], 0.4) # alpha value hardcoded !!!
+        plt.figure(figsize=(30,30))
+        plt.imshow(img) #cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+        plt.axis('off')
+        plt.savefig(os.path.join(path, "datasets", name, "alignedRGB", f"{i}.pdf"), dpi = 300, bbox_inches='tight')
+        plt.clf()
+    
+    return None
 
 
 """
@@ -302,3 +422,19 @@ def monthlyAverageScenesEnCC(d, ROI, applyKernel, name):
     return result
 
 """
+
+def main(plot = True):
+    os.chdir(path)
+    d = loadData(path, years, name)
+    d = alignment(d, extractedCoordinates, True, name)
+
+    if plot:
+        visualCheck(name)
+    
+    return None
+
+
+
+if __name__ == "__main__":
+    main()
+     

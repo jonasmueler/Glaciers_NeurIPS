@@ -160,12 +160,15 @@ def getYearlyData(years,
     Name: str
         Name of folder
     """
-    for b in range(len(years) - 1):
+
+    for b in range(len(years)): #- 1):
         os.chdir(path)
         if b < 10:
             print("##############################################################")
             print("start processing year: " + years[b])
-            string = years[b] + "-01-01/" + years[b+1] + "-01-01"
+            #string = years[b] + "-01-01/" + years[b+1] + "-01-01"
+            string = years[b] + "-01-01/" + str(int(years[b]) + 1) + "-01-01"
+            
             API(boundingBox,
                 string,
                 clouds,
