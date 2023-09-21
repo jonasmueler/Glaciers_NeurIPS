@@ -321,107 +321,16 @@ def visualCheck(name):
     
     return None
 
+def averageOverMonths(delta = 6):
 
-"""
-
-
-    # check for the correct months to make data stationary -> summer data
-    l = []
-    counterImg = 0
-    usedMonths = []
-    #months =  [[i, i+1, i+2] for i in range(1, 12, 3) if i+2 <= 12] # parvati
-    months = [[i, i+1, i+2, i+3] for i in range(1, 13, 4) if i+3 <= 12]
-
-    for y in np.arange(2013, 2022, 1): # year
-        #for m in np.arange(1,13,1): # month
-        for [m, n, t, h] in months:
-            imgAcc = np.zeros((2, ROI[1] - ROI[0], ROI[3] - ROI[2]))
-            month = 0
-            for i in range(len(d)):
-                if (((convertDatetoVector(d[i][0])[1].item() == m) or (convertDatetoVector(d[i][0])[1].item() == n)  or (convertDatetoVector(d[i][0])[1].item() == t) or (convertDatetoVector(d[i][0])[1].item() == h))  and (convertDatetoVector(d[i][0])[2].item() == y)):
-                    # count months
-                    month += 1
-
-                    ## get roi and apply kernel
-                    img = d[i][1][: , :, :]
-
-                    # align
-                    if month == 1:
-                        imgAcc += img
-                    if month > 1:
-                        imgAcc = (imgAcc + img) / 2 # average
-
-
-            # apply NDSI
-            # add snow mask to average image
-            threshold = 0.3
-            NDSI = np.divide(np.subtract(imgAcc[0, :, :], imgAcc[1, :, :]),
-                                         np.add(imgAcc[0, :, :], imgAcc[1, :, :]))
-            # nosnow = np.ma.masked_where(NDSI >= threshold, NDSI).filled(0) ## leave in case necessary to use in future
-            snow = np.ma.masked_where(NDSI < threshold, NDSI).filled(0)
-            l.append(snow)
-            usedMonths.append(np.array([[m,y]]))
-
-        print("averaging of year: ", y, " done")
-
-
-    # sanity check
-    #assert len(usedMonths) == len(l) == 9*3 # 9 years, 12 months, average 3 months
-
-
-    # interpolate between images
-    ## first images can not be interpolated take first not missing image as template and impute
-    indices = [i for i in range(len(l)) if not np.any(np.isnan(l[i]))]
-
-    for i in range(len(indices) - 1):
-        idx = indices[i]
-        succ = indices[i + 1]
-
-        if succ - idx == 1:
-            pass
-
-        elif succ - idx > 1:
-            diff = succ - idx
-            delta = (l[succ] - l[idx]) / diff
-            for t in range(diff):
-                # l[idx + t + 1] = l[idx] + (t+1) * delta
-                l[idx + t + 1] = np.ma.masked_where(l[idx] + (t + 1) * delta < threshold, NDSI).filled(0)
-
-    print("interpolation done")
-    result = l
-    #usedMonths = usedMonths[1:]
-
-
-    ## save on harddrive
-    print("start saving scenes")
-    path = os.getcwd()
-    os.makedirs("monthlyAveragedScenes", exist_ok=True)
-    os.chdir(os.path.join(path, "monthlyAveragedScenes"))
-    os.makedirs("images", exist_ok=True)
-    os.makedirs("dates", exist_ok=True)
-    counter = 0
-
-    for i in range(len(result)):
-        # save images
-        os.chdir(os.path.join(path,"monthlyAveragedScenes", "images"))
-
-        # save data object on drive
-        with open(str(counter), "wb") as fp:
-            pickle.dump(result[i], fp)
-
-        # save dates
-        os.chdir(os.path.join(path, "monthlyAveragedScenes", "dates"))
-
-        # save data object on drive
-        with open(str(counter), "wb") as fp:
-            pickle.dump(usedMonths[i], fp)
-        counter += 1
-
-    print("saving scenes done")
-
-    return result
-
-"""
+    # get date indices for months in specific year
+    
+    os.chdir(os.path.join(path, "datasets", name, "dates"))
+    files = glob.glob(os.path.join(os.path.join(path, "datasets", name, "dates"), '*'))
+    for file in files:
+        date = openData(file)
+        print(date)
+    #for year in years: 
 
 def main(plot = True):
     os.chdir(path)
@@ -433,8 +342,7 @@ def main(plot = True):
     
     return None
 
-
-
 if __name__ == "__main__":
-    main()
+    #main()
+    averageOverMonths()
      
