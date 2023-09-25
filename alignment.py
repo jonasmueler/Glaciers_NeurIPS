@@ -200,7 +200,7 @@ def enhancedCorAlign(imgStack, bands = [1,2,3]):
 def alignment(d, ROI, applyKernel, name):
 
     """
-    gets list of list with images from  different months alignes the images
+    gets list of list with images from  different months aligns the images
 
     d: list of tuple of datetime and np.array
     ROI: list of int
@@ -209,8 +209,7 @@ def alignment(d, ROI, applyKernel, name):
         apply kernel to average out missing values in images
     name: str
 
-    returns: tuple of np.array
-        dates in np array and aligned images in np.array
+    returns: None
     """
 
     # get region of interest in data
@@ -260,6 +259,73 @@ def alignment(d, ROI, applyKernel, name):
 
     return d
 
+
+def alignmentNDSI(d, ROI, applyKernel, name):
+
+    """
+    gets list of list with images from  different months aligns the images
+
+    d: list of tuple of datetime and np.array
+    ROI: list of int
+        region of interest to be processed in pixels
+    applyKernel: boolean
+        apply kernel to average out missing values in images
+    name: str
+
+    returns: None
+        
+    """
+
+    # get region of interest in data
+    for i in range(len(d)):
+        img = d[i][1][:, ROI[0]:ROI[1], ROI[2]:ROI[3]]
+        # clean missings with kernel
+        if applyKernel:
+            # apply kernel to raw bands, do many times as sometimes division by zero gives nans in image
+            for z in range(img.shape[0]):  
+                while np.count_nonzero(np.isnan(img[z, :, :])) > 0:
+                    img[z, :, :] = applyToImage(img[z, :, :])
+                    print("still missing ", np.count_nonzero(np.isnan(img[z, :, :])), " pixels")
+                print("band: ", z, " of ", img.shape[0] - 1, "done")
+        print(f"application of kernel on image {i} done")
+        d[i] = (d[i][0] ,img)
+
+    # align data with enhanced correlation method
+    print("start image alignment")
+    images = [d[i][1] for i in range(len(d))]
+
+    images = np.stack(images, axis = 0)
+
+    alignedData = enhancedCorAlign(images, bands = [2, 5, 5])
+
+    print("image alignment done")
+
+    # put back into d list
+    #for i in range(len(d)):
+    #    d[i] = (d[i][0] , alignedData[i])
+    
+    # save on hard drive 
+    os.chdir(path)
+    os.makedirs(os.path.join(path, "datasets", name, "alignedData"), exist_ok=True)
+    os.makedirs(os.path.join(path, "datasets", name, "dates"), exist_ok=True)
+
+    # save data 
+    for i in range(len(d)):
+        # save images
+        os.chdir(os.path.join(path, "datasets", name, "alignedData"))
+        with open(str(i), "wb") as fp:
+            pickle.dump(alignedData[i], fp)
+
+        # save dates
+        os.chdir(os.path.join(path, "datasets", name, "dates"))
+        with open(str(i), "wb") as fp:
+            pickle.dump(d[i][0], fp)
+
+    return None
+
+def calculateNDSI():
+    return
+
 def minmaxScaler(X):
     """
     X: 2d array
@@ -293,56 +359,125 @@ def createImage(img, alpha):
 
     return plotData
 
-def visualCheck(name):
+def visualCheck(name, aligned = False, alignedAveraged = True):
     """
     plots the aligned and extracted images in RGB coordinates by using the scaled red, green and blue band values of the satellite.
 
     name: str
         name of the extracted data object from the satellite 
+    aligned: boolean
+        plot aligned images?
+    alignedAveraged: boolean 
+        plot aligned and averaged images
     """
+    if aligned: 
+        # load data
+        currentPath = os.path.join(path, "datasets", name, "alignedData")
+        os.chdir(currentPath)
+        files = glob.glob(os.path.join(currentPath, '*'))
 
-    # load data
-    currentPath = os.path.join(path, "datasets", name, "alignedData")
-    os.chdir(currentPath)
-    files = glob.glob(os.path.join(currentPath, '*'))
+        # create folder 
+        os.makedirs(os.path.join(path, "datasets", name, "alignedRGB"),exist_ok=True)
 
-    # create folder 
-    os.makedirs(os.path.join(path, "datasets", name, "alignedRGB"),exist_ok=True)
+        # plot data sequentially and save
+        for i in range(len(files)):  # rgb
+            img = openData(files[i])
+            img = createImage(img[:, :, :], 0.4) # alpha value hardcoded !!!
+            plt.figure(figsize=(30,30))
+            plt.imshow(img) #cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+            #plt.axis('off')
+            plt.savefig(os.path.join(path, "datasets", name, "alignedRGB", f"{i}.pdf"), dpi = 300, bbox_inches='tight')
+            plt.clf()
+    elif alignedAveraged:
+        # load data
+        currentPath = os.path.join(path, "datasets", name, "alignedAveragedData")
+        os.chdir(currentPath)
+        files = glob.glob(os.path.join(currentPath, '*'))
 
-    # plot data sequentially and save
-    for i in range(len(files)):  # rgb
-        img = openData(files[i])
-        img = createImage(img[:, :, :], 0.4) # alpha value hardcoded !!!
-        plt.figure(figsize=(30,30))
-        plt.imshow(img) #cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-        plt.axis('off')
-        plt.savefig(os.path.join(path, "datasets", name, "alignedRGB", f"{i}.pdf"), dpi = 300, bbox_inches='tight')
-        plt.clf()
+        # create folder 
+        os.makedirs(os.path.join(path, "datasets", name, "alignedAveragedRGB"),exist_ok=True)
+
+        # plot data sequentially and save
+        for i in range(len(files)):  # rgb
+            img = openData(files[i])[0]
+            img = createImage(img[:, :, :], 0.4) # alpha value hardcoded !!!
+            plt.figure(figsize=(30,30))
+            plt.imshow(img) #cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+            #plt.axis('off')
+            plt.savefig(os.path.join(path, "datasets", name, "alignedAveragedRGB", f"{i}.pdf"), dpi = 300, bbox_inches='tight')
+            plt.clf()
+
     
     return None
 
-def averageOverMonths(delta = 6):
+def averageOverMonths(delta = 6, verbose = True):
+    """
+    Takes aligned images and averages over specified timedelta
 
-    # get date indices for months in specific year
+    delta: int 
+        time delta to average over 
     
+    verbose: boolean 
+        print information about image distribution for mean estimates
+
+    """
     os.chdir(os.path.join(path, "datasets", name, "dates"))
-    files = glob.glob(os.path.join(os.path.join(path, "datasets", name, "dates"), '*'))
-    for file in files:
-        date = openData(file)
-        print(date)
-    #for year in years: 
+    filesGlob = glob.glob(os.path.join(os.path.join(path, "datasets", name, "dates"), '*'))
+
+    output = []
+    for year in years:
+        # filter for years
+        files = [filesGlob[i] for i in range(len(filesGlob)) if int(convertDatetoVector(openData(filesGlob[i]))[2]) == int(year)]
+
+        # filter and average over months in year
+        listOfList = []
+        listOfListInd = []
+        for i in range(1, 12, delta): # deltas
+            monthsDelta = [convertDatetoVector(openData(files[b]))[1] for b in range(len(files)) if 
+                        convertDatetoVector(openData(files[b]))[1] < i + (delta) and convertDatetoVector(openData(files[b]))[1] >= i ]
+            monthsDeltaInd = [b for b in range(len(files)) if 
+                        convertDatetoVector(openData(files[b]))[1] < i + (delta) and convertDatetoVector(openData(files[b]))[1] >= i ]
+            listOfList.append(monthsDelta)
+            listOfListInd.append(monthsDeltaInd)
+        
+        if verbose:
+            print(f"Distribution of images in timedeltas: {listOfListInd}")
+
+        # check if no images for at least one delta
+        if any(not sublist for sublist in listOfList):
+            print("At least one timedelta interval contains no images")
+            print("Choose different time-delta or different coordinates")
+            return None
+        
+        # average data arrays over months
+        imagesYear = []
+        for i in range(len(listOfListInd)):
+            images = [openData(os.path.join(path, "datasets", name, "alignedData", str(ind))) for ind in listOfListInd[i]]
+            imagesAvg = np.mean(np.stack(images, 0), 0)
+            imagesYear.append(imagesAvg)
+        
+        output.append(imagesYear)
+
+    # save averaged images on harddrive
+    for i in range(len(output)):
+        os.makedirs(os.path.join(path, "datasets", name, "alignedAveragedData"), exist_ok=True)
+        os.chdir(os.path.join(path, "datasets", name, "alignedAveragedData"))
+        with open(str(i), "wb") as fp:
+            pickle.dump(output[i], fp)
+    
+    return output
 
 def main(plot = True):
     os.chdir(path)
     d = loadData(path, years, name)
     d = alignment(d, extractedCoordinates, True, name)
-
+    d = averageOverMonths()
     if plot:
         visualCheck(name)
     
     return None
 
 if __name__ == "__main__":
-    #main()
-    averageOverMonths()
+    main()
+    
      

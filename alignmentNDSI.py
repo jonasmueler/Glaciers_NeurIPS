@@ -1,4 +1,6 @@
 from alignment import *
+import numpy as np 
+import os
 
 def enhancedCorAlign(imgStack, bands = [2,5,5]):
     """
