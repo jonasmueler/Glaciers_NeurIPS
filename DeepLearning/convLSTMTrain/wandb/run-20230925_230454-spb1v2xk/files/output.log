@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/datasetClasses.py", line 78, in __getitem__
+    inpt = functions.openData(self.images[idx]).unsqueeze()
+TypeError: unsqueeze() missing 1 required positional arguments: "dim"
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/convLSTMTrain.py", line 34, in <module>
+    functions.trainLoop(dataTrain, dataVal,  model, loss, False, "ConvLSTMBig", params, True, device)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/functions.py", line 571, in trainLoop
+    for inpts, targets in trainLoader:
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/datasetClasses.py", line 85, in __getitem__
+    inpt = functions.openData(self.images[index]).unsqueeze()
+TypeError: unsqueeze() missing 1 required positional arguments: "dim"

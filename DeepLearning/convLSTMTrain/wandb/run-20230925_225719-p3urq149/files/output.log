@@ -1,0 +1,12 @@
+
+torch.Size([4, 2, 50, 50])
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/convLSTMTrain.py", line 34, in <module>
+    functions.trainLoop(dataTrain, dataVal,  model, loss, False, "ConvLSTMBig", params, True, device)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/functions.py", line 581, in trainLoop
+    forward = model.forward(inpts, targets, training = True)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/ConvLSTM.py", line 260, in forward
+    out = self.convOut(out).squeeze()
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/ConvLSTM.py", line 245, in convOut
+    s = x[:, i, :, :, :]
+IndexError: too many indices for tensor of dimension 4

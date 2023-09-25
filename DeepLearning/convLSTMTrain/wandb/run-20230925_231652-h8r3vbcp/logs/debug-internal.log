@@ -1,0 +1,242 @@
+2023-09-25 23:16:52,666 INFO    StreamThr :1494 [internal.py:wandb_internal():86] W&B internal server running at pid: 1494, started at: 2023-09-25 23:16:52.663928
+2023-09-25 23:16:52,674 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: status
+2023-09-25 23:16:52,687 INFO    WriterThread:1494 [datastore.py:open_for_write():85] open: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/run-h8r3vbcp.wandb
+2023-09-25 23:16:52,688 DEBUG   SenderThread:1494 [sender.py:send():380] send: header
+2023-09-25 23:16:52,717 DEBUG   SenderThread:1494 [sender.py:send():380] send: run
+2023-09-25 23:16:56,062 INFO    SenderThread:1494 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1092, in _validate_conn
+    conn.connect()
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7fb73d044460>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fb73d044460>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fb73d044460>: Failed to resolve 'api.wandb.ai' ([Errno -3] Temporary failure in name resolution)"))
+2023-09-25 23:16:57,719 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-25 23:17:02,722 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-25 23:17:07,726 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-25 23:17:11,034 INFO    SenderThread:1494 [dir_watcher.py:__init__():211] watching files in: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files
+2023-09-25 23:17:11,035 INFO    SenderThread:1494 [sender.py:_start_run_threads():1122] run started: h8r3vbcp with start time 1695676612.670323
+2023-09-25 23:17:11,036 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:17:11,078 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: check_version
+2023-09-25 23:17:11,079 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: check_version
+2023-09-25 23:17:11,361 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: run_start
+2023-09-25 23:17:11,362 DEBUG   HandlerThread:1494 [system_info.py:__init__():32] System info init
+2023-09-25 23:17:11,362 DEBUG   HandlerThread:1494 [system_info.py:__init__():47] System info init done
+2023-09-25 23:17:11,362 INFO    HandlerThread:1494 [system_monitor.py:start():181] Starting system monitor
+2023-09-25 23:17:11,363 INFO    SystemMonitor:1494 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-25 23:17:11,363 INFO    HandlerThread:1494 [system_monitor.py:probe():201] Collecting system info
+2023-09-25 23:17:11,364 INFO    SystemMonitor:1494 [interfaces.py:start():190] Started cpu monitoring
+2023-09-25 23:17:11,366 INFO    SystemMonitor:1494 [interfaces.py:start():190] Started disk monitoring
+2023-09-25 23:17:11,367 INFO    SystemMonitor:1494 [interfaces.py:start():190] Started memory monitoring
+2023-09-25 23:17:11,369 INFO    SystemMonitor:1494 [interfaces.py:start():190] Started network monitoring
+2023-09-25 23:17:11,395 DEBUG   HandlerThread:1494 [system_info.py:probe():196] Probing system
+2023-09-25 23:17:11,413 DEBUG   HandlerThread:1494 [system_info.py:_probe_git():181] Probing git
+2023-09-25 23:17:11,449 DEBUG   HandlerThread:1494 [system_info.py:_probe_git():189] Probing git done
+2023-09-25 23:17:11,450 DEBUG   HandlerThread:1494 [system_info.py:probe():244] Probing system done
+2023-09-25 23:17:11,450 DEBUG   HandlerThread:1494 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-83-generic-x86_64-with-glibc2.35', 'python': '3.10.13', 'heartbeatAt': '2023-09-25T21:17:11.395722', 'startedAt': '2023-09-25T21:16:52.627445', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/convLSTMTrain.py', 'codePathLocal': 'convLSTMTrain.py', 'codePath': 'DeepLearning/convLSTMTrain/convLSTMTrain.py', 'git': {'remote': 'https://github.com/jonasmueler/Glaciers_NeurIPS.git', 'commit': '439383dbf302accd3c8ff07110606a3efee336b3'}, 'email': 'jonasmu@edu.aau.at', 'root': '/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS', 'host': 'jonas-X555UB', 'username': 'jonas', 'executable': '/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2487.22525, 'min': 400.0, 'max': 2800.0}, 'cpu_freq_per_core': [{'current': 2400.0, 'min': 400.0, 'max': 2800.0}, {'current': 2400.0, 'min': 400.0, 'max': 2800.0}, {'current': 2400.0, 'min': 400.0, 'max': 2800.0}, {'current': 2748.901, 'min': 400.0, 'max': 2800.0}], 'disk': {'/': {'total': 3.8265228271484375, 'used': 0.00011444091796875}}, 'memory': {'total': 7.653049468994141}}
+2023-09-25 23:17:11,450 INFO    HandlerThread:1494 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-25 23:17:11,450 INFO    HandlerThread:1494 [system_monitor.py:probe():214] Publishing system info
+2023-09-25 23:17:11,451 DEBUG   HandlerThread:1494 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-25 23:17:11,452 DEBUG   HandlerThread:1494 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-25 23:17:11,454 INFO    HandlerThread:1494 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-25 23:17:11,463 DEBUG   SenderThread:1494 [sender.py:send():380] send: files
+2023-09-25 23:17:11,463 INFO    SenderThread:1494 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-09-25 23:17:11,486 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:17:11,487 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:17:11,493 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:17:11,926 DEBUG   SenderThread:1494 [sender.py:send():380] send: telemetry
+2023-09-25 23:17:11,934 DEBUG   SenderThread:1494 [sender.py:send():380] send: exit
+2023-09-25 23:17:11,935 INFO    SenderThread:1494 [sender.py:send_exit():585] handling exit code: 1
+2023-09-25 23:17:11,935 INFO    SenderThread:1494 [sender.py:send_exit():587] handling runtime: 0
+2023-09-25 23:17:11,938 INFO    SenderThread:1494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:17:11,940 INFO    SenderThread:1494 [sender.py:send_exit():593] send defer
+2023-09-25 23:17:11,942 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:11,942 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-25 23:17:11,944 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:11,944 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-09-25 23:17:11,945 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 1
+2023-09-25 23:17:11,946 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:11,946 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-25 23:17:11,948 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:11,948 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-09-25 23:17:11,949 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 2
+2023-09-25 23:17:11,949 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:11,950 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-25 23:17:11,950 INFO    HandlerThread:1494 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-25 23:17:11,951 DEBUG   SystemMonitor:1494 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-25 23:17:11,953 DEBUG   SystemMonitor:1494 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-25 23:17:11,953 INFO    HandlerThread:1494 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-25 23:17:11,953 DEBUG   SystemMonitor:1494 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-25 23:17:11,955 INFO    HandlerThread:1494 [interfaces.py:finish():202] Joined disk monitor
+2023-09-25 23:17:11,958 INFO    HandlerThread:1494 [interfaces.py:finish():202] Joined memory monitor
+2023-09-25 23:17:11,959 INFO    HandlerThread:1494 [interfaces.py:finish():202] Joined network monitor
+2023-09-25 23:17:11,961 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:11,962 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-09-25 23:17:11,962 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 3
+2023-09-25 23:17:11,963 DEBUG   SenderThread:1494 [sender.py:send():380] send: stats
+2023-09-25 23:17:11,963 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:11,965 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-25 23:17:11,967 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:11,967 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-09-25 23:17:11,968 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 4
+2023-09-25 23:17:11,969 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:11,970 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-25 23:17:11,971 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:11,972 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-09-25 23:17:11,972 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 5
+2023-09-25 23:17:11,973 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:11,974 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-25 23:17:11,977 DEBUG   SenderThread:1494 [sender.py:send():380] send: summary
+2023-09-25 23:17:11,981 INFO    SenderThread:1494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:17:11,983 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:11,983 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-09-25 23:17:11,984 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 6
+2023-09-25 23:17:11,984 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:11,985 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-25 23:17:11,986 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:11,986 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-09-25 23:17:11,995 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:17:12,061 INFO    Thread-12 :1494 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/wandb-metadata.json
+2023-09-25 23:17:12,063 INFO    Thread-12 :1494 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/output.log
+2023-09-25 23:17:12,065 INFO    Thread-12 :1494 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/wandb-summary.json
+2023-09-25 23:17:12,066 INFO    Thread-12 :1494 [dir_watcher.py:_on_file_created():271] file/dir created: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/requirements.txt
+2023-09-25 23:17:12,279 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 7
+2023-09-25 23:17:12,280 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:12,281 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-25 23:17:12,282 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:12,283 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-09-25 23:17:12,339 INFO    wandb-upload_0:1494 [upload_job.py:push():131] Uploaded file /tmp/tmpovrazz2kwandb/cy5dpq59-wandb-metadata.json
+2023-09-25 23:17:12,577 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-25 23:17:13,046 INFO    Thread-12 :1494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/config.yaml
+2023-09-25 23:17:14,048 INFO    Thread-12 :1494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/output.log
+2023-09-25 23:17:15,960 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 8
+2023-09-25 23:17:15,961 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: poll_exit
+2023-09-25 23:17:15,962 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:15,964 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-25 23:17:15,965 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:15,966 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-09-25 23:17:15,967 INFO    SenderThread:1494 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-25 23:17:15,972 INFO    SenderThread:1494 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-09-25 23:17:15,983 INFO    SenderThread:1494 [job_builder.py:build():369] adding wandb-job metadata file
+2023-09-25 23:17:15,992 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 9
+2023-09-25 23:17:15,993 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:15,994 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-25 23:17:15,994 DEBUG   SenderThread:1494 [sender.py:send():380] send: artifact
+2023-09-25 23:17:16,059 INFO    Thread-12 :1494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/output.log
+2023-09-25 23:17:17,072 INFO    SenderThread:1494 [sender.py:send_artifact():1456] sent artifact job-https___github.com_jonasmueler_Glaciers_NeurIPS.git_DeepLearning_convLSTMTrain_convLSTMTrain.py - {'id': 'QXJ0aWZhY3Q6NTgzNjE5MDU5', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwMDkzNDU0Nw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTgzNjE5MDU5', 'versionIndex': 0}}}
+2023-09-25 23:17:17,072 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:17,072 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:17:17,072 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-09-25 23:17:17,073 INFO    SenderThread:1494 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-25 23:17:17,582 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-25 23:17:18,067 INFO    SenderThread:1494 [dir_watcher.py:finish():388] scan: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files
+2023-09-25 23:17:18,070 INFO    SenderThread:1494 [dir_watcher.py:finish():402] scan save: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/config.yaml config.yaml
+2023-09-25 23:17:18,073 INFO    SenderThread:1494 [dir_watcher.py:finish():402] scan save: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/output.log output.log
+2023-09-25 23:17:18,088 INFO    SenderThread:1494 [dir_watcher.py:finish():402] scan save: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/requirements.txt requirements.txt
+2023-09-25 23:17:18,101 INFO    SenderThread:1494 [dir_watcher.py:finish():402] scan save: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/wandb-metadata.json wandb-metadata.json
+2023-09-25 23:17:18,103 INFO    SenderThread:1494 [dir_watcher.py:finish():402] scan save: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/wandb-summary.json wandb-summary.json
+2023-09-25 23:17:18,110 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 10
+2023-09-25 23:17:18,112 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:18,112 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-25 23:17:18,118 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:18,118 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-09-25 23:17:18,119 INFO    SenderThread:1494 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-25 23:17:18,553 INFO    wandb-upload_0:1494 [upload_job.py:push():131] Uploaded file /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/config.yaml
+2023-09-25 23:17:18,993 INFO    wandb-upload_1:1494 [upload_job.py:push():131] Uploaded file /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/output.log
+2023-09-25 23:17:18,999 INFO    wandb-upload_3:1494 [upload_job.py:push():131] Uploaded file /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/wandb-summary.json
+2023-09-25 23:17:19,009 INFO    wandb-upload_2:1494 [upload_job.py:push():131] Uploaded file /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/files/requirements.txt
+2023-09-25 23:17:19,211 INFO    Thread-11 (_thread_body):1494 [sender.py:transition_state():613] send defer: 11
+2023-09-25 23:17:19,212 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:19,213 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-25 23:17:19,214 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:19,215 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-09-25 23:17:19,216 INFO    SenderThread:1494 [file_pusher.py:join():181] waiting for file pusher
+2023-09-25 23:17:19,217 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 12
+2023-09-25 23:17:19,218 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:19,218 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-25 23:17:19,220 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:19,221 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-09-25 23:17:19,221 INFO    SenderThread:1494 [file_stream.py:finish():595] file stream finish called
+2023-09-25 23:17:19,399 INFO    SenderThread:1494 [file_stream.py:finish():599] file stream finish is done
+2023-09-25 23:17:19,400 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 13
+2023-09-25 23:17:19,401 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:19,402 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-25 23:17:19,406 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:19,407 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-09-25 23:17:19,409 INFO    SenderThread:1494 [sender.py:transition_state():613] send defer: 14
+2023-09-25 23:17:19,415 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: defer
+2023-09-25 23:17:19,418 INFO    HandlerThread:1494 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-25 23:17:19,416 DEBUG   SenderThread:1494 [sender.py:send():380] send: final
+2023-09-25 23:17:19,421 DEBUG   SenderThread:1494 [sender.py:send():380] send: footer
+2023-09-25 23:17:19,422 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: defer
+2023-09-25 23:17:19,423 INFO    SenderThread:1494 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-09-25 23:17:19,431 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-25 23:17:19,438 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: server_info
+2023-09-25 23:17:19,440 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: poll_exit
+2023-09-25 23:17:19,441 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-25 23:17:19,444 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: server_info
+2023-09-25 23:17:19,445 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-25 23:17:19,453 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:17:19,467 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: job_info
+2023-09-25 23:17:19,650 DEBUG   SenderThread:1494 [sender.py:send_request():407] send_request: job_info
+2023-09-25 23:17:19,651 INFO    MainThread:1494 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-09-25 23:17:19,651 INFO    MainThread:1494 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-09-25 23:17:19,652 INFO    MainThread:1494 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-09-25 23:17:19,654 DEBUG   HandlerThread:1494 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-25 23:17:19,655 INFO    HandlerThread:1494 [handler.py:finish():844] shutting down handler
+2023-09-25 23:17:20,475 INFO    WriterThread:1494 [datastore.py:close():294] close: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231652-h8r3vbcp/run-h8r3vbcp.wandb
+2023-09-25 23:17:20,651 INFO    SenderThread:1494 [sender.py:finish():1534] shutting down sender
+2023-09-25 23:17:20,652 INFO    SenderThread:1494 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-25 23:17:20,653 INFO    SenderThread:1494 [file_pusher.py:join():181] waiting for file pusher

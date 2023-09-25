@@ -1,0 +1,56 @@
+epoch:  0 , example:  1  current loss =  0.22678716480731964
+epoch:  0 , example:  2  current loss =  0.21553009748458862
+epoch:  0 , example:  3  current loss =  0.18524982035160065
+epoch:  0 , example:  4  current loss =  0.2711668014526367
+epoch:  0 , example:  5  current loss =  0.19116416573524475
+epoch:  0 , example:  6  current loss =  0.2669762074947357
+epoch:  0 , example:  7  current loss =  0.21910366415977478
+epoch:  0 , example:  8  current loss =  0.1137203723192215
+epoch:  0 , example:  9  current loss =  0.2888234257698059
+epoch:  0 , example:  10  current loss =  0.2774863839149475
+epoch:  0 , example:  11  current loss =  0.23520009219646454
+epoch:  0 , example:  12  current loss =  0.13319773972034454
+epoch:  0 , example:  13  current loss =  0.18201002478599548
+epoch:  0 , example:  14  current loss =  0.21593789756298065
+epoch:  0 , example:  15  current loss =  0.1268293708562851
+epoch:  0 , example:  16  current loss =  0.17174577713012695
+epoch:  0 , example:  17  current loss =  0.1891738921403885
+epoch:  0 , example:  18  current loss =  0.20447830855846405
+epoch:  0 , example:  19  current loss =  0.18903766572475433
+epoch:  0 , example:  20  current loss =  0.19301271438598633
+epoch:  0 , example:  21  current loss =  0.13135121762752533
+epoch:  0 , example:  22  current loss =  0.2342676818370819
+epoch:  0 , example:  23  current loss =  0.25624576210975647
+epoch:  0 , example:  24  current loss =  0.12870289385318756
+epoch:  0 , example:  25  current loss =  0.13437439501285553
+epoch:  0 , example:  26  current loss =  0.24478459358215332
+epoch:  0 , example:  27  current loss =  0.2679539918899536
+epoch:  0 , example:  28  current loss =  0.2950831651687622
+epoch:  0 , example:  29  current loss =  0.23179668188095093
+epoch:  0 , example:  30  current loss =  0.18463361263275146
+epoch:  0 , example:  31  current loss =  0.2574596703052521
+epoch:  0 , example:  32  current loss =  0.15465590357780457
+epoch:  0 , example:  33  current loss =  0.2409268319606781
+epoch:  0 , example:  34  current loss =  0.11281170696020126
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/convLSTMTrain.py", line 34, in <module>
+    functions.trainLoop(dataTrain, dataVal,  model, loss, False, "ConvLSTMBig", params, True, device)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/functions.py", line 581, in trainLoop
+    forward = model.forward(inpts, targets, training = True)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/ConvLSTM.py", line 257, in forward
+    out = self.decoder(x, y, training)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/ConvLSTM.py", line 219, in decoder
+    _, last_states = self.convLSTMDec(x)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/ConvLSTM.py", line 152, in forward
+    h, c = self.cell_list[layer_idx](input_tensor=cur_layer_input[:, t, :, :, :],
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/fx/traceback.py", line 41, in format_stack
+    return traceback.format_list(traceback.extract_stack()[:-1])
+  File "/usr/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/usr/lib/python3.10/traceback.py", line 379, in extract
+    linecache.checkcache(filename)
+  File "/usr/lib/python3.10/linecache.py", line 52, in checkcache
+    def checkcache(filename=None):
+KeyboardInterrupt

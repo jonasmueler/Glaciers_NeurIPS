@@ -1,0 +1,60 @@
+{
+    "os": "Linux-5.15.0-83-generic-x86_64-with-glibc2.35",
+    "python": "3.10.13",
+    "heartbeatAt": "2023-09-25T21:28:21.627786",
+    "startedAt": "2023-09-25T21:28:20.601403",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/lstmAttentionTrain.py",
+    "codePathLocal": "lstmAttentionTrain.py",
+    "codePath": "DeepLearning/LSTMTrain/lstmAttentionTrain.py",
+    "git": {
+        "remote": "https://github.com/jonasmueler/Glaciers_NeurIPS.git",
+        "commit": "439383dbf302accd3c8ff07110606a3efee336b3"
+    },
+    "email": "jonasmu@edu.aau.at",
+    "root": "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS",
+    "host": "jonas-X555UB",
+    "username": "jonas",
+    "executable": "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2475.01075,
+        "min": 400.0,
+        "max": 2800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 2800.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 2800.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 2800.0
+        },
+        {
+            "current": 2700.043,
+            "min": 400.0,
+            "max": 2800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 3.8265228271484375,
+            "used": 0.00011444091796875
+        }
+    },
+    "memory": {
+        "total": 7.653049468994141
+    }
+}

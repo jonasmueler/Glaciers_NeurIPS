@@ -1,0 +1,33 @@
+
+epoch:  0 , example:  1  current loss =  0.2605460584163666
+epoch:  0 , example:  2  current loss =  0.22694504261016846
+epoch:  0 , example:  3  current loss =  0.10027125477790833
+epoch:  0 , example:  4  current loss =  0.1458471566438675
+epoch:  0 , example:  5  current loss =  0.14892679452896118
+epoch:  0 , example:  6  current loss =  0.10316888242959976
+epoch:  0 , example:  7  current loss =  0.038737036287784576
+epoch:  0 , example:  8  current loss =  0.07051540166139603
+epoch:  0 , example:  9  current loss =  0.061431560665369034
+epoch:  0 , example:  10  current loss =  0.029013248160481453
+epoch:  0 , example:  11  current loss =  0.051266804337501526
+epoch:  0 , example:  12  current loss =  0.034878041595220566
+epoch:  0 , example:  13  current loss =  0.03464267775416374
+epoch:  0 , example:  14  current loss =  0.03832199424505234
+Traceback (most recent call last):
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/lstmAttentionTrain.py", line 41, in <module>
+    functions.trainLoop(dataTrain, dataVal,  model, loss, False, "LSTMAttentionSmall", params, True, device)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/functions.py", line 582, in trainLoop
+    forward = model.forward(inpts, targets, training = True)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/lstmAttention.py", line 217, in forward
+    output = self.decoder(s, y, training)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/lstmAttention.py", line 203, in decoder
+    outputEnc = self.encoder(outputEnc[:, -4:, :])  # take last 4 inputs
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/lstmAttention.py", line 165, in encoder
+    output, _ = self.lstmEncoder(x, (h_0, c_0))  # lstm with input, hidden, and internal state
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 812, in forward
+    result = _VF.lstm(input, hx, self._flat_weights, self.bias, self.num_layers,
+  File "/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/SatelliteImageExtraction/lib/python3.10/site-packages/torch/fx/traceback.py", line 35, in format_stack
+    @compatibility(is_backward_compatible=False)
+KeyboardInterrupt

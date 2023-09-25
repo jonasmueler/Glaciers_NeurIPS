@@ -1,0 +1,26 @@
+2023-09-25 23:19:48,640 INFO    MainThread:1821 [wandb_setup.py:_flush():76] Current SDK version is 0.15.11
+2023-09-25 23:19:48,646 INFO    MainThread:1821 [wandb_setup.py:_flush():76] Configure stats pid to 1821
+2023-09-25 23:19:48,646 INFO    MainThread:1821 [wandb_setup.py:_flush():76] Loading settings from /home/jonas/.config/wandb/settings
+2023-09-25 23:19:48,647 INFO    MainThread:1821 [wandb_setup.py:_flush():76] Loading settings from /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/settings
+2023-09-25 23:19:48,647 INFO    MainThread:1821 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-25 23:19:48,648 INFO    MainThread:1821 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-25 23:19:48,648 INFO    MainThread:1821 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'DeepLearning/convLSTMTrain/convLSTMTrain.py', 'program_abspath': '/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/convLSTMTrain.py', 'program': '/media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/convLSTMTrain.py'}
+2023-09-25 23:19:48,650 INFO    MainThread:1821 [wandb_init.py:_log_setup():528] Logging user logs to /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231948-e4j04x8d/logs/debug.log
+2023-09-25 23:19:48,651 INFO    MainThread:1821 [wandb_init.py:_log_setup():529] Logging internal logs to /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/convLSTMTrain/wandb/run-20230925_231948-e4j04x8d/logs/debug-internal.log
+2023-09-25 23:19:48,651 INFO    MainThread:1821 [wandb_init.py:init():568] calling init triggers
+2023-09-25 23:19:48,652 INFO    MainThread:1821 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'ConvLSTMBig', 'dataset': 'Helheim, Aletsch, jakobshavn', 'epochs': 40}
+2023-09-25 23:19:48,653 INFO    MainThread:1821 [wandb_init.py:init():618] starting backend
+2023-09-25 23:19:48,654 INFO    MainThread:1821 [wandb_init.py:init():622] setting up manager
+2023-09-25 23:19:48,674 INFO    MainThread:1821 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-25 23:19:48,681 INFO    MainThread:1821 [wandb_init.py:init():628] backend started and connected
+2023-09-25 23:19:48,694 INFO    MainThread:1821 [wandb_init.py:init():720] updated telemetry
+2023-09-25 23:19:48,728 INFO    MainThread:1821 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-09-25 23:20:06,467 INFO    MainThread:1821 [wandb_run.py:_on_init():2220] communicating current version
+2023-09-25 23:20:06,701 INFO    MainThread:1821 [wandb_run.py:_on_init():2229] got version response 
+2023-09-25 23:20:06,702 INFO    MainThread:1821 [wandb_init.py:init():804] starting run threads in backend
+2023-09-25 23:20:06,858 INFO    MainThread:1821 [wandb_run.py:_console_start():2199] atexit reg
+2023-09-25 23:20:06,858 INFO    MainThread:1821 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-09-25 23:20:06,858 INFO    MainThread:1821 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-09-25 23:20:06,859 INFO    MainThread:1821 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-09-25 23:20:06,864 INFO    MainThread:1821 [wandb_init.py:init():845] run started, returning control to user process
