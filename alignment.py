@@ -164,7 +164,7 @@ def enhancedCorAlign(imgStack, bands = [1,2,3]):
     motionModel = cv2.MOTION_HOMOGRAPHY
 
     # Define ECC algorithm parameters
-    criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10000, 1e-4)
+    criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, maxIterations, stoppingCriterion)
 
     #### debug ####
     #criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10000, 0.1)
@@ -257,13 +257,13 @@ def alignment(d, ROI, applyKernel, name):
         with open(str(i), "wb") as fp:
             pickle.dump(d[i][0], fp)
 
-    return d
+    return None
 
 
-def alignmentNDSI(d, ROI, applyKernel, name):
+def alignmentNDSIBands(d, ROI, applyKernel, name):
 
     """
-    gets list of list with images from  different months aligns the images
+    gets list of list with images from  different months, aligns the images
 
     d: list of tuple of datetime and np.array
     ROI: list of int
@@ -306,16 +306,16 @@ def alignmentNDSI(d, ROI, applyKernel, name):
     
     # save on hard drive 
     os.chdir(path)
-    os.makedirs(os.path.join(path, "datasets", name, "alignedData"), exist_ok=True)
+    os.makedirs(os.path.join(path, "datasets", name, "alignedDataNDSIBands"), exist_ok=True)
     os.makedirs(os.path.join(path, "datasets", name, "dates"), exist_ok=True)
 
     # save data 
     for i in range(len(d)):
         # save images
-        os.chdir(os.path.join(path, "datasets", name, "alignedData"))
+        os.chdir(os.path.join(path, "datasets", name, "alignedDataNDSIBands"))
         with open(str(i), "wb") as fp:
             pickle.dump(alignedData[i], fp)
-
+        
         # save dates
         os.chdir(os.path.join(path, "datasets", name, "dates"))
         with open(str(i), "wb") as fp:
@@ -324,6 +324,34 @@ def alignmentNDSI(d, ROI, applyKernel, name):
     return None
 
 def calculateNDSI():
+    """
+    calculates NDSI images in new folder from extracted data
+
+    """
+
+    # load data
+    currentPath = os.path.join(path, "datasets", name, "alignedDataNDSIBands")
+    os.chdir(currentPath)
+    files = glob.glob(os.path.join(currentPath, '*'))
+
+    # create folder for NDSI images 
+    os.makedirs(os.path.join(path, "datasets", name, "alignedDataNDSI"), exist_ok=True)
+
+    # load and change data 
+    for i in range(len(files)):
+        img = openData(files[i])
+        threshold = 0.3
+        NDSI = np.divide(np.subtract(img[0, :, :], img[1, :, :]),
+                                         np.add(img[0, :, :], img[1, :, :]))
+        
+        # nosnow = np.ma.masked_where(NDSI >= threshold, NDSI).filled(0) ## leave in case necessary to use in future
+        snow = np.ma.masked_where(NDSI < threshold, NDSI).filled(0)
+        
+        # save 
+        os.chdir(os.path.join(path, "datasets", name, "alignedDataNDSI"))
+        with open(str(i), "wb") as fp:
+            pickle.dump(snow, fp)
+
     return
 
 def minmaxScaler(X):
@@ -368,43 +396,56 @@ def visualCheck(name, aligned = False, alignedAveraged = True):
     aligned: boolean
         plot aligned images?
     alignedAveraged: boolean 
-        plot aligned and averaged images
+        plot aligned and averaged images?
     """
     if aligned: 
         # load data
-        currentPath = os.path.join(path, "datasets", name, "alignedData")
+        if extractNDSI == True:
+            currentPath = os.path.join(path, "datasets", name, "alignedDataNDSI")
+        elif extractNDSI == False:
+            currentPath = os.path.join(path, "datasets", name, "alignedData")
         os.chdir(currentPath)
         files = glob.glob(os.path.join(currentPath, '*'))
 
         # create folder 
-        os.makedirs(os.path.join(path, "datasets", name, "alignedRGB"),exist_ok=True)
+        os.makedirs(os.path.join(path, "datasets", name, "alignedPlots"),exist_ok=True)
 
         # plot data sequentially and save
         for i in range(len(files)):  # rgb
             img = openData(files[i])
-            img = createImage(img[:, :, :], 0.4) # alpha value hardcoded !!!
+            if extractNDSI:
+                pass
+            elif extractNDSI == False: #create normalized RGB image
+                img = createImage(img[:, :, :], 0.4) # alpha value hardcoded !!!
             plt.figure(figsize=(30,30))
             plt.imshow(img) #cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
             #plt.axis('off')
-            plt.savefig(os.path.join(path, "datasets", name, "alignedRGB", f"{i}.pdf"), dpi = 300, bbox_inches='tight')
+            plt.savefig(os.path.join(path, "datasets", name, "alignedPlots", f"{i}.pdf"), dpi = 300, bbox_inches='tight')
             plt.clf()
     elif alignedAveraged:
         # load data
-        currentPath = os.path.join(path, "datasets", name, "alignedAveragedData")
+        if extractNDSI == True:
+            currentPath = os.path.join(path, "datasets", name, "alignedAveragedDataNDSI")
+        elif extractNDSI == False:
+            currentPath = os.path.join(path, "datasets", name, "alignedAveragedData")
         os.chdir(currentPath)
         files = glob.glob(os.path.join(currentPath, '*'))
 
         # create folder 
-        os.makedirs(os.path.join(path, "datasets", name, "alignedAveragedRGB"),exist_ok=True)
+        os.makedirs(os.path.join(path, "datasets", name, "alignedAveragedPlots"),exist_ok=True)
 
         # plot data sequentially and save
         for i in range(len(files)):  # rgb
-            img = openData(files[i])[0]
-            img = createImage(img[:, :, :], 0.4) # alpha value hardcoded !!!
-            plt.figure(figsize=(30,30))
-            plt.imshow(img) #cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+            img = openData(files[i])
+            if extractNDSI:
+                plt.figure(figsize=(30,30))
+                plt.imshow(img)
+            elif extractNDSI == False: #create normalized RGB image
+                img = createImage(img[:, :, :], 0.4) # alpha value hardcoded !!!
+                plt.figure(figsize=(30,30))
+                plt.imshow(img) #cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
             #plt.axis('off')
-            plt.savefig(os.path.join(path, "datasets", name, "alignedAveragedRGB", f"{i}.pdf"), dpi = 300, bbox_inches='tight')
+            plt.savefig(os.path.join(path, "datasets", name, "alignedAveragedPlots", f"{i}.pdf"), dpi = 300, bbox_inches='tight')
             plt.clf()
 
     
@@ -421,11 +462,14 @@ def averageOverMonths(delta = 6, verbose = True):
         print information about image distribution for mean estimates
 
     """
+    print("######################################################################################################")
+    print("start averaging over months")
     os.chdir(os.path.join(path, "datasets", name, "dates"))
     filesGlob = glob.glob(os.path.join(os.path.join(path, "datasets", name, "dates"), '*'))
 
     output = []
     for year in years:
+        print("processing: " + year)
         # filter for years
         files = [filesGlob[i] for i in range(len(filesGlob)) if int(convertDatetoVector(openData(filesGlob[i]))[2]) == int(year)]
 
@@ -450,30 +494,48 @@ def averageOverMonths(delta = 6, verbose = True):
             return None
         
         # average data arrays over months
-        imagesYear = []
+        #imagesYear = []
         for i in range(len(listOfListInd)):
-            images = [openData(os.path.join(path, "datasets", name, "alignedData", str(ind))) for ind in listOfListInd[i]]
+            if extractNDSI == True: 
+                images = [openData(os.path.join(path, "datasets", name, "alignedDataNDSI", str(ind))) for ind in listOfListInd[i]]
+            if extractNDSI == False: 
+                images = [openData(os.path.join(path, "datasets", name, "alignedData", str(ind))) for ind in listOfListInd[i]]
             imagesAvg = np.mean(np.stack(images, 0), 0)
-            imagesYear.append(imagesAvg)
+            output.append(imagesAvg)
         
-        output.append(imagesYear)
+        #output.append(imagesYear)
 
     # save averaged images on harddrive
     for i in range(len(output)):
-        os.makedirs(os.path.join(path, "datasets", name, "alignedAveragedData"), exist_ok=True)
-        os.chdir(os.path.join(path, "datasets", name, "alignedAveragedData"))
-        with open(str(i), "wb") as fp:
-            pickle.dump(output[i], fp)
+        if extractNDSI == True: 
+            os.makedirs(os.path.join(path, "datasets", name, "alignedAveragedDataNDSI"), exist_ok=True)
+            os.chdir(os.path.join(path, "datasets", name, "alignedAveragedDataNDSI"))
+            with open(str(i), "wb") as fp:
+                pickle.dump(output[i], fp)
+                
+        if extractNDSI == False: 
+            os.makedirs(os.path.join(path, "datasets", name, "alignedAveragedData"), exist_ok=True)
+            os.chdir(os.path.join(path, "datasets", name, "alignedAveragedData"))
+            with open(str(i), "wb") as fp:
+                pickle.dump(output[i], fp)
     
     return output
 
 def main(plot = True):
     os.chdir(path)
     d = loadData(path, years, name)
-    d = alignment(d, extractedCoordinates, True, name)
-    d = averageOverMonths()
-    if plot:
-        visualCheck(name)
+    if extractNDSI == True:
+        d = alignmentNDSIBands(d, extractedCoordinates, True, name)
+        d = calculateNDSI()
+        d = averageOverMonths(delta = deltaT)
+        if plot:
+            visualCheck(name)
+
+    elif extractNDSI == False:
+        d = alignment(d, extractedCoordinates, True, name)
+        d = averageOverMonths(delta = deltaT)
+        if plot:
+            visualCheck(name)
     
     return None
 

@@ -164,7 +164,7 @@ def getYearlyData(years,
     for b in range(len(years)): #- 1):
         os.chdir(path)
         if b < 10: ## fix here !!
-            print("##############################################################")
+            print("#####################################################################################################")
             print("start processing year: " + years[b])
             #string = years[b] + "-01-01/" + years[b+1] + "-01-01"
             string = years[b] + "-01-01/" + str(int(years[b]) + 1) + "-01-01"

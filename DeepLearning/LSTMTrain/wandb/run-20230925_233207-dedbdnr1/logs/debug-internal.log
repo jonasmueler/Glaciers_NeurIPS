@@ -215,3 +215,610 @@
 2023-09-25 23:34:06,585 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
 2023-09-25 23:34:06,772 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
 2023-09-25 23:34:07,647 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:08,973 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:34:08,985 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:09,073 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:34:09,099 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:34:09,101 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:34:13,287 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:13,289 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:13,289 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:13,291 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:13,443 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:14,153 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:15,155 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:18,390 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:18,393 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:18,425 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:18,426 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:18,459 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:19,171 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:21,177 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:23,465 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:23,468 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:23,525 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:23,527 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:23,611 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:24,073 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:34:24,074 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:34:24,079 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:34:24,185 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:25,187 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:28,565 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:28,566 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:28,567 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:28,567 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:28,594 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:29,201 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:31,205 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:33,627 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:34,471 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:34,475 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:34,476 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:35,271 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:35,573 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:37,658 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:38,974 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:34:39,063 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:39,073 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:34:39,086 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:34:39,087 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:34:41,426 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:41,427 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:41,428 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:41,518 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:41,723 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:43,729 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:44,581 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:46,395 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:46,397 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:46,440 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:46,497 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:46,744 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:49,754 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:50,547 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:51,530 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:51,532 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:51,570 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:51,650 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:51,788 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:53,795 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:34:54,073 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:34:54,074 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:34:54,079 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:34:56,317 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:34:56,805 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:34:56,806 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:34:56,807 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:34:56,907 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:34:57,805 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:34:59,814 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:01,947 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:02,095 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:02,098 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:02,130 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:02,224 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:02,822 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:03,823 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:07,229 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:07,495 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:07,498 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:07,540 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:07,544 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:07,837 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:08,975 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:35:09,073 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:35:09,075 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:35:09,080 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:35:09,847 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:12,313 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:12,744 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:12,746 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:12,747 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:12,772 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:13,071 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:15,076 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:17,924 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:18,013 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:18,016 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:18,041 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:18,044 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:18,237 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:19,239 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:23,109 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:23,343 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:23,345 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:23,365 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:23,439 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:24,074 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:35:24,075 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:35:24,080 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:35:24,252 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:25,257 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:28,369 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:28,796 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:28,797 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:28,798 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:28,863 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:29,275 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:31,283 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:33,872 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:34,013 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:34,016 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:34,048 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:34,052 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:34,303 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:35,306 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:38,977 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:35:38,981 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:39,075 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:35:39,078 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:35:39,079 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:35:39,233 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:39,341 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:39,346 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:39,392 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:39,432 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:41,435 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:44,210 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:44,214 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:44,240 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:44,240 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:44,351 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:44,450 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:45,452 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:49,327 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:49,329 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:49,362 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:49,363 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:49,440 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:49,612 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:51,616 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:54,074 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:35:54,076 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:35:54,083 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:35:54,514 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:54,758 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:54,759 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:35:54,759 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:54,762 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:55,695 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:35:57,701 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:35:59,480 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:35:59,483 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:35:59,509 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:35:59,606 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:35:59,711 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:00,623 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:01,717 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:04,921 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:04,924 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:04,965 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:05,000 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:05,736 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:06,028 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:07,745 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:08,978 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:36:09,074 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:36:09,075 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:36:09,081 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:36:10,129 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:10,130 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:10,153 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:10,156 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:10,753 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:11,258 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:11,758 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:15,546 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:15,550 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:15,551 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:15,552 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:15,791 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:16,554 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:17,801 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:20,842 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:20,845 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:20,889 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:20,891 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:21,813 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:21,939 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:23,819 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:24,074 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:36:24,075 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:36:24,081 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:36:25,989 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:25,990 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:25,991 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:26,046 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:26,832 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:27,123 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:27,836 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:31,719 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:31,722 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:31,761 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:31,804 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:31,887 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:32,841 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:33,894 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:36,783 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:36,786 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:36,814 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:36,817 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:37,049 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:37,920 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:38,979 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:36:39,055 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:39,075 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:36:39,076 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:36:39,082 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:36:42,066 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:42,067 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:42,068 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:42,110 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:43,070 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:43,077 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:43,229 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:47,624 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:47,626 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:47,661 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:47,664 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:48,088 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:48,717 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:49,092 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:52,784 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:52,787 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:52,865 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:52,917 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:53,110 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:53,975 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:36:54,074 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:36:54,075 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:36:54,081 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:36:55,115 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:58,169 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:36:58,170 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:36:58,170 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:36:58,210 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:36:59,134 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:36:59,135 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:36:59,300 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:03,925 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:03,929 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:03,963 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:04,011 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:04,171 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:05,014 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:05,174 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:08,980 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:37:09,074 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:37:09,075 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:37:09,081 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:37:10,221 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:10,223 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:10,224 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:10,225 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:10,258 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:11,209 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:11,210 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:15,307 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:16,160 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:16,163 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:16,200 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:16,202 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:16,273 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:17,280 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:21,238 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:21,921 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:21,925 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:21,956 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:21,959 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:22,305 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:23,309 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:24,076 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:37:24,077 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:37:24,083 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:37:26,353 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:28,454 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:28,455 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:28,456 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:28,502 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:29,332 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:29,332 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:31,504 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:33,844 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:33,847 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:33,869 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:33,872 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:34,343 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:35,347 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:36,932 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:38,982 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:37:39,075 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:37:39,077 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:37:39,088 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:37:39,101 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:39,419 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:39,420 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:39,422 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:40,364 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:41,366 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:42,426 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:44,263 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:44,266 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:44,290 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:44,323 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:44,481 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:45,484 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:48,334 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:49,763 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:49,766 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:49,805 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:49,808 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:50,503 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:51,506 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:53,899 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:37:54,076 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:37:54,077 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:37:54,084 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:37:55,283 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:37:55,284 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:37:55,315 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:37:55,349 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:37:55,523 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:37:57,527 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:37:59,361 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:00,537 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:00,539 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:00,539 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:00,574 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:01,537 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:01,539 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:04,660 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:05,979 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:05,981 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:06,025 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:06,121 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:06,556 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:07,560 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:08,983 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:38:09,076 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:38:09,077 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:38:09,085 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:38:10,519 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:11,406 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:11,407 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:11,442 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:11,499 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:11,601 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:13,606 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:16,516 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:16,679 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:16,681 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:16,682 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:16,685 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:17,619 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:17,620 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:21,688 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:21,923 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:21,926 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:21,945 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:22,057 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:22,633 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:23,635 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:24,076 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:38:24,078 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:38:24,085 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:38:27,334 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:27,335 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:27,335 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:27,336 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:27,417 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:27,644 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:29,647 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:32,420 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:32,730 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:32,732 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:32,754 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:32,777 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:33,660 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:35,665 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:37,789 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:37,842 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:37,845 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:37,886 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:38,054 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:38,679 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:38,984 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:38:39,076 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:38:39,077 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:38:39,085 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:38:39,683 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:43,176 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:43,177 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:43,178 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:43,178 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:43,209 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:43,696 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:45,700 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:48,314 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:48,829 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:48,831 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:48,858 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:48,892 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:49,711 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:51,715 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:53,907 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:53,949 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:53,952 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:53,985 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:54,076 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:38:54,086 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:38:54,117 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:54,121 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:38:54,722 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:38:55,724 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:38:58,988 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:38:59,163 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:38:59,164 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:38:59,193 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:38:59,195 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:38:59,738 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:01,742 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:04,297 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:04,496 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:04,498 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:04,530 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:04,533 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:04,752 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:05,754 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:08,985 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:39:09,076 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:39:09,076 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:39:09,085 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:39:09,803 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:10,251 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:10,253 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:10,253 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:10,289 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:10,764 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:11,767 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:15,317 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:15,910 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:15,912 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:16,112 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:16,163 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:16,785 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:17,787 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:21,208 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:21,892 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:21,895 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:21,925 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:21,928 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:22,803 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:23,806 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:24,077 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:39:24,077 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:39:24,086 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:39:26,328 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:27,314 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:27,315 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:27,315 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:27,348 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:27,815 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:29,819 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:31,451 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:32,547 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:32,549 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:32,580 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:32,723 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:32,841 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:33,839 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:36,728 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:37,807 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:37,809 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:37,837 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:37,840 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:38,025 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:38,986 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:39:39,076 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:39:39,077 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:39:39,086 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:39:40,029 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:42,425 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:43,043 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:43,044 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:43,044 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:43,155 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:44,037 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:46,042 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:48,161 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:48,733 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:48,736 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:48,759 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:48,825 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:49,048 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:50,050 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:53,828 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:53,977 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:53,980 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:54,001 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:54,004 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:54,077 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:39:54,100 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:39:54,101 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:39:54,120 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:39:56,126 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:39:59,121 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:39:59,122 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:39:59,122 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:39:59,122 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:39:59,160 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:39:59,287 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:02,300 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:40:04,258 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:40:04,941 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:40:04,944 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:40:04,977 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:40:04,980 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:40:05,309 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:08,317 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:40:08,988 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:40:09,077 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:40:09,078 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:40:09,086 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:40:09,354 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:40:10,006 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:40:10,007 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:40:10,008 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:40:10,010 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:40:10,323 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:11,325 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:40:14,997 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:40:14,999 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:40:15,000 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:40:15,000 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:40:15,029 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:40:15,336 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:17,341 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:40:20,105 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:40:20,196 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:40:20,198 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:40:20,231 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:40:20,265 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:40:20,416 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:21,418 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:40:24,078 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:40:24,080 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:40:24,089 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:40:25,268 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:40:25,269 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:40:25,270 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:40:25,270 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:40:25,311 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:40:25,530 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:27,537 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:40:30,405 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:40:30,526 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:40:30,529 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:40:30,547 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:40:30,550 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:40:30,676 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:31,677 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:40:35,636 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:40:35,676 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:40:35,678 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:40:35,679 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:40:35,682 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:40:35,686 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:37,692 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log
+2023-09-25 23:40:38,988 DEBUG   SenderThread:3061 [sender.py:send():380] send: stats
+2023-09-25 23:40:39,077 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-25 23:40:39,079 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: stop_status
+2023-09-25 23:40:39,086 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-25 23:40:40,944 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: status_report
+2023-09-25 23:40:41,069 DEBUG   HandlerThread:3061 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-25 23:40:41,071 DEBUG   SenderThread:3061 [sender.py:send():380] send: history
+2023-09-25 23:40:41,071 DEBUG   SenderThread:3061 [sender.py:send_request():407] send_request: summary_record
+2023-09-25 23:40:41,093 INFO    SenderThread:3061 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-25 23:40:41,703 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/wandb-summary.json
+2023-09-25 23:40:43,711 INFO    Thread-12 :3061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/jonas/B41ED7D91ED792AA/Arbeit_und_Studium/Kognitionswissenschaft/Glaciers_NeurIPS/Glaciers_NeurIPS/DeepLearning/LSTMTrain/wandb/run-20230925_233207-dedbdnr1/files/output.log

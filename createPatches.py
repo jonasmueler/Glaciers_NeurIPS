@@ -199,11 +199,11 @@ def main():
     print("data loaded")
 
     # create patches
-    d = automatePatching(data, 50, 10)
+    d = automatePatching(data, patchSize, stride)
     print("data patched")
 
     # put into tensors
-    d = getTrainTest(d, 4, 0,0)
+    d = getTrainTest(d, sequenceLength, 0,0)
     print("data converted to tensors and saved")
 
     return None 
