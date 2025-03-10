@@ -1,15 +1,47 @@
-# Glacier Movement Prediction with Attention-based Recurrent Neural Networks and Satellite Data
-![Alt Text](animationParvatialigned.gif)
+# **Glacier Movement Prediction with Attention-based Recurrent Neural Networks and Satellite Data**  
+![Glacier Movement Animation](animationParvatialigned.gif)  
 
-This repository is desigend to facilitate the process of extracting satellite images from Microsoft's Planetary Computer database and gives all functionalities to preprocess (alignment, patching) the data with enhanced correlation coefficient maximization. Furthermore the repo entails a newly developed methodology (paper_reference) to divide the images into sequential patches in order to train recurrent neural networks
+This repository provides tools for extracting satellite images from Microsoft's Planetary Computer database, preprocessing them with enhanced correlation coefficient maximization, and training recurrent neural networks (RNNs) for glacier movement prediction. The methodology includes a novel approach to dividing images into sequential patches for deep learning applications, as detailed in [paper_reference].  
 
-In order to run the code it is advised to use a virtual environment with the packages in the requirements.txt installed
+## **Setup and Installation**  
+To run the code, it is recommended to use a virtual environment and install the required dependencies using:  
+```bash
+pip install -r requirements.txt
+```
 
-## Image extraction
-The code uses Landsat-8 images, but can be adapted to other satellite databases in the Planetary Computer. The main file used to control the code output is the config.py file. Here all hyperparameters for image extraction and alignment can be specified. Additionally the jupyter notebook getCoordinatesFromMap.ipynb can be used to get a interactive map with the ipyleaflet tool in order to extract bounding boxes for a specific region of interest in lattitude and longitude coordinates. The dataAPI.py file extracts the necessary files and saves them in a pickle object for each year. All data is saved in specified folders in the created /datasets folder. The alignment.py file is then used in order to align the data and extract the needed bands from the images. The extractNDSI variable in the config.py file can be used if NDSI maps should be extracted for glacier/ice/snow data. 
+---
 
-## Patching for deep learning applications
-The createPatches.py file is used to extract tensors containing consecutive patches from the same coordinates across time from the images. The used methodology is explained in detail in <paper link>. The sript creates two folders, /images and /targets, where the respective images file is the model input (4 consecutive patches) and the targets file corresponds to the ground truths (connecting 4 consecutive patches). 
+## **1. Satellite Image Extraction**  
+The code primarily uses **Landsat-8** images but can be adapted for other satellite datasets in the Planetary Computer.  
 
-## Train RNN models
-The /DeepLearning folder contains functionalities to train different deep learning models. Each folder for a different model class contains a train script, which can be used to control hyperparameters and the general training process. The scripts use the weights and biases tool, which can be used for free in order to visualize tarining progress in a web browser. The tool only requires the creation of an account. 
+### **Key Components:**  
+- **`config.py`**: The main configuration file where all hyperparameters for image extraction and alignment are specified.  
+- **`getCoordinatesFromMap.ipynb`**: A Jupyter notebook that provides an interactive map (using `ipyleaflet`) to extract bounding boxes for specific regions of interest based on latitude and longitude.  
+- **`dataAPI.py`**: Handles the extraction of satellite images, storing them as pickle files for each year in structured folders under `/datasets`.  
+- **`alignment.py`**: Aligns images and extracts relevant spectral bands. If **NDSI maps** (useful for glacier, ice, and snow analysis) should be generated, enable the `extractNDSI` flag in `config.py`.  
+
+---
+
+## **2. Patching for Deep Learning Applications**  
+The **`createPatches.py`** script extracts tensors containing sequential patches from the same coordinates across different time steps. This methodology is explained in detail in [[paper_link](https://www.researchgate.net/profile/Jonas-Mueller-17/publication/376807637_Glacier_Movement_Prediction_with_Attention-based_Recurrent_Neural_Networks_and_Satellite_Data/links/658983872468df72d3d82576/Glacier-Movement-Prediction-with-Attention-based-Recurrent-Neural-Networks-and-Satellite-Data.pdf)].  
+
+### **Output Structure:**  
+- **`/images/`**: Stores model inputs (4 consecutive patches).  
+- **`/targets/`**: Stores ground truth data corresponding to each set of consecutive patches.  
+
+---
+
+## **3. Training Recurrent Neural Networks (RNNs)**  
+The **`/DeepLearning`** folder contains scripts for training different deep learning models for glacier movement prediction.  
+
+### **Training Process:**  
+- Each model class has its own **train script**, which allows customization of hyperparameters and training settings.  
+- The training process utilizes **Weights & Biases (WandB)** for real-time tracking and visualization.  
+- To use WandB, create a free account and log in during training to monitor progress via a web browser.  
+
+---
+
+## **Contributions & Future Work**  
+This repository aims to facilitate satellite-based glacier movement prediction using deep learning. Future improvements include integrating additional satellite sources and refining model architectures.  
+
+For questions or contributions, feel free to submit an issue or pull request! 🚀  
